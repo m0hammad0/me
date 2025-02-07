@@ -48,7 +48,7 @@ a {
     margin-left: 8px;
 }
 .profile-div1-span2 {
-    font-family: cursive;
+    font-family: sans-serif;
     font-size: 12px;
     margin-left: 8px;
     color: #6e6e6e;
@@ -80,6 +80,9 @@ a {
     padding: 2px 4px;
     margin-top: 5px;
     color: black;
+    background: linear-gradient(to right, red, #000bfd);
+    background-size: 150% 150%;
+    animation: changeBackground 2s infinite;
 }
 .thing {
     display: flex;
@@ -90,6 +93,17 @@ a {
 .thing-1, .thing-2 {
     display: flex;
     flex-direction: column;
+}
+.thing-button {
+    background: #87878724;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 55px;
 }
 .thing-1-views, .thing-1-posts {
     background-color: #ffffffdb;
@@ -110,7 +124,7 @@ a {
 }
 .thing-1-views-span1, .thing-1-views-span2, .thing-1-posts-span1, .thing-1-posts-span2 {
     font-family: sans-serif;
-    margin: 5px;
+    margin: 1px;
     color: black;
 }
 
@@ -123,12 +137,12 @@ a {
     justify-content: center;
     border: 2px solid #ffffff;
 }
-.thing-2-likes-a, .thing-2-comments-a {
+.thing-2-likes-a, .thing-2-comments-a, .thing-2-shares-a {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 80px;
+    height: 100%;
     width: 100%;
 }
 .thing-2-shares-a {
@@ -278,4 +292,65 @@ a {
     display: flex;
     justify-content: start;
     width: 100%;
+}
+/*----------/posts----------*/
+
+/*----------followers----------*/
+.followers {
+    background-color: #ffffffdb;
+    border-radius: 15px;
+    margin: 8px 8px 8px 8px;
+    display: flex;
+    align-items: start;
+    padding: 8px 20px;
+    border: 2px solid #ffffff;
+    flex-direction: column;
+}
+.followers-div1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.followers-div1-img {
+    border-radius: 30px;
+    width: 25px;
+    margin: 0 2px 0 8px;
+}
+.followers-div1-span {
+    margin: 0 8px 0 2px;
+    font-family: sans-serif;
+}
+.followers-div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.follower {
+    height: 50px;
+    width: 100%;
+    justify-content: start;
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 2px 0 4px 0;
+}
+.followers-div-div1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.followers-div-div1-img {
+    border-radius: 30px;
+    width: 35px;
+    margin: 10px;
+}
+.followers-div-div1-span {
+    font-family: font1;
+}
+.followers-div-div2 {
+    width: 50%;
+    display: flex;
+    justify-content: end;
 }
